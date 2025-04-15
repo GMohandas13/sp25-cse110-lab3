@@ -3,14 +3,26 @@
     <head>
         <meta charset="UTF-8" />
         <title>Card Game Project: First Brainstorm + Team Bonding</title>
+        <link rel="icon" href="favicon.ico" />
     </head>
     <body>
         <header>
-            <h1> Brainstorm + Bonding</h1>
-            <h2>Date: 4/12/25</h2>
+            <h1>Brainstorm + Bonding</h1>
+            <h2><em>Date: 4/12/25</em></h2>
+            <hr />
+            <nav>
+                <p><strong>Quick Links:</strong></p>
+                <ul>
+                    <li><a href="#attendance">Attendance</a></li>
+                    <li><a href="#agenda">Agenda</a></li>
+                    <li><a href="#unfinished">Unfinished Business</a></li>
+                    <li><a href="#forms">Extra Forms</a></li>
+                </ul>
+            </nav>
+            <hr />
         </header>
         <main>
-            <section> 
+            <section id="attendance"> 
                 <h2>Attendance</h2>
                 <ul>
                     <li>Gautam Mohandas</li>
@@ -26,7 +38,8 @@
                     <li>Kilhoon Kim</li>
                 </ul>
             </section>
-            <section>
+            <hr />
+            <section id="agenda">
                 <h2>Agenda</h2>
                 <ol>
                     <li>Play Jackbox games and learn about each other</li>
@@ -34,15 +47,57 @@
                     <li>Record Video</li>
                 </ol>
             </section>
-
-            <section>
+            <hr />
+            <section id="unfinised">
                 <h2>Unfinished Business</h2>
                 <ul>
-                    <li>Discuss Team Culture</li>
+                    <li>Discuss <i>Team Culture</i></li>
                     <li>General Housekeeping Rules</li>
                 </ul>
             </section>
+            <hr />
+            <section>
+                <h3>Personal Notes</h3>
+                <div>
+                    <details>
+                        <summary>Group's Favorite Snacks</summary>
+                        <p><strong>Jalepeno chips</strong> are a <b>majority</b> favorite<br /> but cheetos are a close second!</p>
+                    </details>
+                </div>
+            </section>
+            <hr />
+            <section id="forms">
+                <h2>Extra Forms</h2>
+                <form>
+                    <fieldset>
+                        <p>Select which you think could have been improved on:</p>
+                        <input type="checkbox" id="Team Communication" name="improvements" value="Team Communication" />
+                        <label for="Team Communication">Team Communication</label><br />
 
+                        <input type="checkbox" id="Planning" name="improvements" value="Planning" />
+                        <label for="Planning">Planning</label><br />
+                        <hr />
+
+                        <p>How do you feel about the team's performance so far?</p>
+                        <input type="radio" id="amazing" name="performance" value="amazing" />
+                        <label for="amazing">Amazing!</label><br />
+
+                        <input type="radio" id="good" name="performance" value="good" />
+                        <label for="good">Good!</label><br />
+
+                        <input type="radio" id="meh" name="performance" value="meh" />
+                        <label for="meh">meh...</label><br />
+                        <hr />
+
+                        <label for="Alternate Name">Nickname or Alternate Name: </label>
+                        <input type="text" id="Alternate Name" name="Alternate Name" /><br />
+                        <hr />
+
+                        <label for="next-date">Next date that you are free?</label>
+                        <input type="date" id="next-date" name="next-date" /><br />
+                    </fieldset>
+                </form>
+            </section>
         </main>
     </body>
 </html>
