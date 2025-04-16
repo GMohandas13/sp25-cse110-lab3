@@ -71,8 +71,8 @@
                 <form>
                     <fieldset>
                         <p>Select which you think could have been improved on:</p>
-                        <input type="checkbox" id="Team Communication" name="improvements" value="Team Communication" />
-                        <label for="Team Communication">Team Communication</label><br />
+                        <input type="checkbox" id="TeamCommunication" name="improvements" value="TeamCommunication" />
+                        <label for="TeamCommunication">Team Communication</label><br />
 
                         <input type="checkbox" id="Planning" name="improvements" value="Planning" />
                         <label for="Planning">Planning</label><br />
@@ -89,12 +89,36 @@
                         <label for="meh">meh...</label><br />
                         <hr />
 
-                        <label for="Alternate Name">Nickname or Alternate Name: </label>
-                        <input type="text" id="Alternate Name" name="Alternate Name" /><br />
+                        <label for="AlternateName">Nickname or Alternate Name: </label>
+                        <input type="text" id="AlternateName" name="AlternateName" /><br />
                         <hr />
 
                         <label for="next-date">Next date that you are free?</label>
                         <input type="date" id="next-date" name="next-date" /><br />
+                        <hr />
+
+                        <label for="ready">Ready to get started on the project?</label>
+                        <select id="ready" name="ready">
+                            <option value="yes">Yes!</option>
+                            <option value="no">No!</option>
+                        </select><br />
+                        <hr />
+
+                        <label for="role">The role you would like?</label>
+                        <input list="roles" id="role" name="role" />
+                        <datalist id="roles">
+                            <option value="Lead Developer"></option>
+                            <option value="UI/UX"></option>
+                            <option value="Front-End"></option>
+                            <option value="Back-End"></option>
+                        </datalist><br />
+                        <hr />
+
+                        <label for="other">Other</label><br />
+                        <textarea id="other" name="other" rows="5" cols="50"></textarea><br />
+                        <hr />
+                        
+                        <button type="submit">Submit Forms</button>
                     </fieldset>
                 </form>
             </section>
