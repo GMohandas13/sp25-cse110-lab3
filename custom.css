@@ -1,0 +1,22 @@
+/* ID Selector */
+#unfinished {
+    background-color: purple;
+    border-style: dotted;
+    padding-top: 5px;
+}
+
+/* Universal Selector */
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Element Selector */
+body {
+    background-color: #EE82EE;
+}
+
+/* Selector List */
+header, footer {
+    background-color: hsl(300, 100%, 25%);
+}
+
