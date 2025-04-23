@@ -1,6 +1,6 @@
 /* Class Selector */
 .recordings {
-    color: #EE82EE;
+    color: #d51ed5;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -15,7 +15,7 @@
 }
   
 .quick-links li {
-    margin: 1;
+    margin: 0.5rem;
 }
 
 .date {
@@ -23,7 +23,7 @@
     text-align: center;
     width: 100%;
     max-width: 3000px;
-    min-height: none;
+    min-height: 2rem;
 }
 
 .team-logo {
@@ -69,7 +69,7 @@ body {
 
 /* Selector List */
 header, footer {
-    background-color: hsl(300, 100%, 25%);
+    background-color: hsl(300, 76%, 68%);
 }
 
 /* Attribute Selector */
@@ -94,7 +94,7 @@ hr ~ p {
 
 h1 {
     text-align: center;
-    padding: 5px, 1px, 5px, 1px;
+    padding: 5px 1px 5px 1px;
     font-size: 5vw;
 }
 
@@ -126,7 +126,7 @@ form:has(textarea) {
     margin: auto;
   
     & details {
-      margin: 5px, 2px, 5px, 2px;
+      margin: 5px 2px 5px 2px;
   
       & summary {
         font-weight: bold;
