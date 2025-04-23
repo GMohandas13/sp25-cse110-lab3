@@ -1,12 +1,60 @@
+/* Class Selector */
+.recordings {
+    color: #EE82EE;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.quick-links {
+    display: flex;
+    gap: 1rem; 
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; 
+}
+  
+.quick-links li {
+    margin: 1;
+}
+
+.date {
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 3000px;
+    min-height: none;
+}
+
+.team-logo {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.me {
+    display: none; /*using none to hide my own name from attendance */
+}
+
+
 /* ID Selector */
 #unfinished {
     background-color: purple;
     border-style: dotted;
-    padding-top: 5px;
     border-color:aqua;
     border-width: 4pt;
     border-radius: 3px;
+    padding-bottom: 5px;
+    margin: auto;
 }
+
+#forms form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: start;
+}
+
 
 /* Universal Selector */
 * {
@@ -17,6 +65,7 @@
 body {
     background-color: #EE82EE;
 }
+
 
 /* Selector List */
 header, footer {
@@ -33,7 +82,6 @@ button:hover {
     background-color: color(display-p3 0.6 0.9 0.6 / 1);
 }
 
-
 button:active {
     background-color: color-mix(in srgb, mediumseagreen 70%, white 30%) ;
     transform: scale(0.90)
@@ -46,5 +94,70 @@ hr ~ p {
 
 h1 {
     text-align: center;
-    padding: 5px;
+    padding: 5px, 1px, 5px, 1px;
+    font-size: 5vw;
 }
+
+nav li {
+    color:azure;
+}
+
+section > h2 {
+    color: pink;
+    text-decoration: overline;
+}
+
+nav p + ul {
+    font-style: italic;
+}
+
+h2.recordings {
+    font-style: oblique;
+}
+
+form:has(textarea) {
+    border-style: ridge;
+}
+
+.notes-box {
+    background-color: #f5fff0;
+    padding: 1em;
+    border: 2px dashed #b2d8b2;
+    margin: auto;
+  
+    & details {
+      margin: 5px, 2px, 5px, 2px;
+  
+      & summary {
+        font-weight: bold;
+        color: seagreen;
+        cursor: pointer;
+      }
+  
+      & p {
+        margin-top: 0.5cm;
+        color: darkgreen;
+        font-style: italic;
+      }
+    }
+  }
+
+/* Responsiveness */
+
+@media (max-width: 600px) {
+    body {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+  
+    main {
+        flex-direction: column;
+    }
+  
+    video, audio {
+        width: 100%;
+    }
+}
+
+
+
