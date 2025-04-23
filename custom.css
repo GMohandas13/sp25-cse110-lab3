@@ -2,6 +2,7 @@
 .recordings {
     color: #d51ed5;
     position: sticky;
+    text-align: center;
     top: 0;
     z-index: 10;
 }
@@ -10,7 +11,7 @@
     display: flex;
     gap: 1rem; 
     list-style: none;
-    padding: 0;
+    padding-top: 0rem;
     flex-wrap: wrap; 
 }
   
@@ -21,6 +22,7 @@
 .date {
     display: block;
     text-align: center;
+    height: 0.5rem;
     width: 100%;
     max-width: 3000px;
     min-height: 2rem;
@@ -39,9 +41,9 @@
 
 /* ID Selector */
 #unfinished {
-    background-color: purple;
+    background-color: hsl(300, 76%, 52%) ;
     border-style: dotted;
-    border-color:aqua;
+    border-color:green;
     border-width: 4pt;
     border-radius: 3px;
     padding-bottom: 5px;
@@ -55,6 +57,15 @@
     align-items: start;
 }
 
+#attendance {
+    background-color: hsl(300, 76%, 63%);
+    ;
+  }
+
+#agenda {
+    background-color: hsl(300, 76%, 59%);
+    ;
+}
 
 /* Universal Selector */
 * {
@@ -66,11 +77,22 @@ body {
     background-color: #EE82EE;
 }
 
+h1 {
+    text-align: center;
+    padding: 5px 1px 5px 1px;
+    font-size: 5vw;
+}
+
 
 /* Selector List */
 header, footer {
     background-color: hsl(300, 76%, 68%);
 }
+
+video, audio {
+    display: block;
+    margin: 1rem auto;
+}  
 
 /* Attribute Selector */
 input[type="checkbox"] {
@@ -87,34 +109,34 @@ button:active {
     transform: scale(0.90)
 }
 
-
+/*General sibling combinator */
 hr ~ p {
     color: mediumvioletred;
 }
 
-h1 {
-    text-align: center;
-    padding: 5px 1px 5px 1px;
-    font-size: 5vw;
-}
-
+/*Descendent combinator */
 nav li {
     color:azure;
 }
 
+/*Child combinator */
 section > h2 {
     color: pink;
     text-decoration: overline;
 }
 
+/*Adjacent Child combinator */
 nav p + ul {
     font-style: italic;
 }
 
+/*Combining Two Selectors */
 h2.recordings {
     font-style: oblique;
 }
 
+/*New Selectors 
+Has and Nested */
 form:has(textarea) {
     border-style: ridge;
 }
